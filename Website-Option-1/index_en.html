@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New-Karomi — Premium Boutique Dental Laboratory</title>
+    <meta name="description" content="45 years of boutique dental laboratory craftsmanship, now enhanced with perfect digital precision.">
+    <link rel="stylesheet" href="./theme.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo" aria-label="New-Karomi">
+                <img src="./logo.png" alt="New-Karomi Logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                <span style="display:none;">New-Karomi</span>
+            </div>
+            <nav aria-label="Main Navigation">
+                <div class="nav-actions">
+                    <a href="./index.html" class="btn-lang" aria-label="Hebrew Version">עב</a>
+                    <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Dark/Light Mode">
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <h1 id="hero-title" class="hero-title">45 Years of Generational Craftsmanship, with Perfect Digital Precision.</h1>
+                <p class="hero-subtitle">Nir and Michal combine legacy expertise with advanced digital workflows, delivering zero-error restorations that protect your reputation and save chair time.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Submit Digital Scan</a>
+                    <a href="#contact" class="btn btn-outline">Let's Work Together</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <img src="./hero.png" alt="Boutique dental lab handcrafting zirconia crowns alongside milling machine" />
+            </div>
+        </section>
+
+        <section class="features" aria-label="Laboratory Capabilities">
+            <div class="container">
+                <article class="feature-row">
+                    <div class="feature-visual">
+                        <img src="./automation.png" alt="Digital precision and automation" />
+                    </div>
+                    <div class="feature-content">
+                        <h2 class="feature-title">Your Practice's Peace of Mind, Our Guarantee.</h2>
+                        <p class="feature-text">Protecting your clinical reputation is our commitment. With 45 years of experience in the art of crowns, Nir and Michal personally work on every restoration. Every case is crafted in our lab without compromise, combining strict quality control, an artist's eye, and digital precision.</p>
+                    </div>
+                </article>
+
+                <article class="feature-row">
+                    <div class="feature-visual">
+                        <img src="./hero.png" alt="Scanner integration" />
+                    </div>
+                    <div class="feature-content">
+                        <h2 class="feature-title">Seamless Scanner Integration. Scan, Send, Receive.</h2>
+                        <p class="feature-text">Our dental lab fully and immediately integrates with all leading intraoral scanners in the industry, including iTero, Trios, Medit, and more. A fast, seamless digital workflow designed to save you chair time and streamline communication with us.</p>
+                    </div>
+                </article>
+
+                <article class="feature-row">
+                    <div class="feature-visual">
+                        <img src="./trust.png" alt="Zirconia materials and aesthetics" />
+                    </div>
+                    <div class="feature-content">
+                        <h2 class="feature-title">Premium Zirconia Aesthetics.</h2>
+                        <p class="feature-text">Perfect customization of monolithic zirconia and layered zirconia using computerized milling technologies. We focus on natural translucency and precise textures, with optimal marginal integrity ensuring consistent results.</p>
+                    </div>
+                </article>
+
+                <article class="feature-row">
+                    <div class="feature-visual">
+                        <img src="./service.png" alt="Clinical partnership" />
+                    </div>
+                    <div class="feature-content">
+                        <h2 class="feature-title">Partners in Your Clinical Success, with Family Warmth.</h2>
+                        <p class="feature-text">Clinics working with us benefit from boutique treatment. Direct access to Nir and Michal, attentive personal guidance, and smart, data-driven order tracking. Luxury quality, four decades of stability, and future-proof precision.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2 id="contact-title" class="feature-title">Partnering for Success.</h2>
+                <p class="feature-text">We selectively partner with quality-driven, good-natured dentists. Fill in the details below and we will get back to you for a personal clinical introduction.</p>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="doctorName">Doctor Name</label>
+                    <input type="text" id="doctorName" class="form-control" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="clinicName">Clinic Name</label>
+                    <input type="text" id="clinicName" class="form-control" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" required aria-required="true">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--space-sm);">Apply for Partnership</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Direct communication with Nir and Michal at the laboratory.</p>
+                <a href="tel:+97200000000">050-000-0000</a>
+            </div>
+            <div class="footer-col" id="submit">
+                <h3>Starter Kit</h3>
+                <p>Includes digital lab forms (Rx), preparation guides, and express shipping labels.</p>
+                <a href="#contact" class="btn btn-primary"
+                    style="padding: var(--space-xs) var(--space-sm); font-size: var(--font-size-small);">Request Starter Kit</a>
+            </div>
+            <div class="footer-col">
+                <h3>Client Portal</h3>
+                <p>Smart, real-time tracking system for cases, scans, and accounts.</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 New-Karomi Dental Laboratories Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./main.js" defer></script>
+</body>
+
+</html>

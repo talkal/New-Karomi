@@ -39,6 +39,14 @@
   --space-xl: clamp(3rem, 5vw, 5rem);
   --space-2xl: clamp(5rem, 8vw, 8rem);
 
+  /* Radius scale (single source of truth) */
+  --radius-sm: 4px;   /* buttons, inputs */
+  --radius-md: 12px;  /* images, cards */
+
+  /* Elevation (warm-tinted shadows) */
+  --shadow-md: 0 4px 16px oklch(0.24 0.02 60 / 0.12);
+  --shadow-lg: 0 12px 32px oklch(0.24 0.02 60 / 0.18);
+
   /* Motion */
   --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   --ease-premium-in-out: cubic-bezier(0.4, 0, 0.2, 1);

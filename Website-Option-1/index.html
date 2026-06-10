@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ניו-קרומי - מעבדת שיניים דיגיטלית ומשפחתית</title>
     <meta name="description" content="45 שנות ניסיון של מעבדת שיניים בוטיק – עכשיו בדיוק דיגיטלי מושלם.">
+    <!-- TODO: בעת העלאה לאוויר — החליפו את og:url ו-og:image בכתובות מלאות (https://...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ניו-קרומי - מעבדת שיניים דיגיטלית ומשפחתית">
+    <meta property="og:description" content="45 שנות ניסיון של מעבדת שיניים בוטיק – עכשיו בדיוק דיגיטלי מושלם.">
+    <meta property="og:image" content="./hero.png">
+    <meta property="og:locale" content="he_IL">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="stylesheet" href="./theme.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -23,42 +31,93 @@
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
                 <span style="display:none;">New-Karomi</span>
             </div>
-            <nav aria-label="ניווט ראשי">
-                <button id="theme-toggle" class="btn-theme-toggle" aria-label="החלף מצב תצוגה כהה/בהיר">
-                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
+            <nav class="main-nav" aria-label="ניווט ראשי">
+                <a href="#features" class="nav-link">שירותים</a>
+                <a href="#testimonials" class="nav-link">ממליצים</a>
+                <a href="#contact" class="nav-link">יצירת קשר</a>
+                <div class="nav-actions">
+                    <a href="./index_en.html" class="btn-lang" aria-label="English Version">EN</a>
+                    <button id="theme-toggle" class="btn-theme-toggle" aria-label="החלף מצב תצוגה כהה/בהיר">
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
 
     <main>
         <section class="hero" aria-labelledby="hero-title">
-            <div class="container hero-content">
-                <h1 id="hero-title" class="hero-title">45 שנות ניסיון של כתרים, עם דיוק דיגיטלי מושלם.
-                </h1>
-                <p class="hero-subtitle">ניר ומיכל משלבים מסורת של אומנות במעבדה יחד עם טכנולוגיית מתקדמת. תהליך
-                    עבודה דיגיטלי רציף שמבטיח שקט נפשי וליווי צמוד לכל מרפאה בארץ.</p>
-                <div class="hero-actions">
-                    <a href="#submit" class="btn btn-primary">שלח סריקה דיגיטלית</a>
-                    <a href="#contact" class="btn btn-outline">בואו נעבוד יחד</a>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">מעבדת בוטיק משפחתית · מאז 1981</p>
+                    <h1 id="hero-title" class="hero-title">45 שנות ניסיון של כתרים, עם דיוק דיגיטלי מושלם.</h1>
+                    <p class="hero-subtitle">ניר ומיכל משלבים מסורת של אומנות במעבדה יחד עם טכנולוגיה מתקדמת. תהליך
+                        עבודה דיגיטלי רציף שמבטיח שקט נפשי וליווי צמוד לכל מרפאה בארץ.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">שלח סריקה דיגיטלית</a>
+                        <a href="#features" class="btn btn-outline">בואו נעבוד יחד</a>
+                    </div>
+                    <div class="hero-trust" aria-label="תאימות סורקים">
+                        <span class="hero-trust-label">מתממשקים עם כל הסורקים המובילים:</span>
+                        <ul class="scanner-list">
+                            <li>iTero</li>
+                            <li>3Shape TRIOS</li>
+                            <li>Medit</li>
+                            <li>CEREC</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-visual" aria-hidden="true">
-                <img src="./hero.png" alt="עבודת יד עדינה של טכנאים לצד תהליך כרסום דיגיטלי מתקדם ונקי" />
+                <div class="hero-visual">
+                    <img src="./hero.png" alt="עבודת יד עדינה של טכנאים לצד תהליך כרסום דיגיטלי מתקדם ונקי" />
+                </div>
             </div>
         </section>
 
-        <section class="features" aria-label="שירותי המעבדה">
+        <!-- TODO: להחליף את כל הנתונים המסומנים ב-[ ] בנתונים אמיתיים -->
+        <section class="stats-band band-dark" aria-label="ניו-קרומי במספרים">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">45</span>
+                    <span class="stat-label">שנות אומנות</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">[X]+</span>
+                    <span class="stat-label">מרפאות שותפות</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">[X,XXX]</span>
+                    <span class="stat-label">שיקומים בשנה</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">[X]</span>
+                    <span class="stat-label">ימי אספקה בממוצע</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features" aria-label="שירותי המעבדה">
             <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">למה ניו-קרומי</p>
+                    <h2 class="section-title">הסטנדרט של מעבדת בוטיק.</h2>
+                </div>
+
                 <article class="feature-row">
-                    <div class="feature-visual">
-                        <img src="./automation.png" alt="דיוק דיגיטלי ואוטומציה" />
+                    <div class="feature-visual img-frame">
+                        <img src="./hero.png" alt="עבודת יד של אמן על כתר זירקוניה במעבדה" />
                     </div>
                     <div class="feature-content">
-                        <h2 class="feature-title">השקט הנפשי של המרפאה שלך, האחריות שלנו.</h2>
+                        <span class="feature-icon" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                        </span>
+                        <h3 class="feature-title">השקט הנפשי של המרפאה שלך, האחריות שלנו.</h3>
                         <p class="feature-text">שמירה על המוניטין של המרפאה שלך היא המחויבות שלנו. עם 45 שנות ניסיון
                             באומנות הכתרים, ניר ומיכל עובדים באופן אישי על כל יצירה. כל עבודה מיוצרת אצלנו
                             במעבדה ללא פשרות, תוך שילוב של בקרת איכות קפדנית, עין של אמן ודיוק דיגיטלי.</p>
@@ -66,11 +125,21 @@
                 </article>
 
                 <article class="feature-row">
-                    <div class="feature-visual">
-                        <img src="./hero.png" alt="אינטגרציה חלקה למרפאה" />
+                    <div class="feature-visual img-frame">
+                        <img src="./automation.png" alt="תהליך עבודה דיגיטלי — אינטגרציה חלקה למרפאה" />
                     </div>
                     <div class="feature-content">
-                        <h2 class="feature-title">סנכרון מלא מול המרפאה שלך. סרוק, שלח, קבל.</h2>
+                        <span class="feature-icon" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+                                <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
+                                <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
+                                <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
+                                <path d="M7 12h10"></path>
+                            </svg>
+                        </span>
+                        <h3 class="feature-title">סנכרון מלא מול המרפאה שלך. סרוק, שלח, קבל.</h3>
                         <p class="feature-text">מעבדת השיניים שלנו מתממשקת באופן מלא ומיידי עם כל הסורקים המובילים
                             בתעשייה. שירות טכנולוגי מהיר וחלק שנועד לחסוך לך זמן כיסא ולייעל
                             את התקשורת איתנו.</p>
@@ -78,11 +147,19 @@
                 </article>
 
                 <article class="feature-row">
-                    <div class="feature-visual">
+                    <div class="feature-visual img-frame">
                         <img src="./trust.png" alt="אסתטיקה וחומרי גלם" />
                     </div>
                     <div class="feature-content">
-                        <h2 class="feature-title">אסתטיקה ברמת פרימיום.</h2>
+                        <span class="feature-icon" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 3h12l4 6-10 13L2 9z"></path>
+                                <path d="M11 3 8 9l4 13 4-13-3-6"></path>
+                                <path d="M2 9h20"></path>
+                            </svg>
+                        </span>
+                        <h3 class="feature-title">אסתטיקה ברמת פרימיום.</h3>
                         <p class="feature-text">התאמה אישית מושלמת של זירקוניה מונוליתית וזירקוניה בשכבות תוך שימוש
                             בטכנולוגיות כרסום ממוחשבות. אנו שמים דגש על שקיפויות טבעיות וטקסטורות
                             מדויקות, עם סגירת שוליים אופטימלית שמבטיחה תוצאות עקביות.</p>
@@ -90,11 +167,20 @@
                 </article>
 
                 <article class="feature-row">
-                    <div class="feature-visual">
+                    <div class="feature-visual img-frame">
                         <img src="./service.png" alt="שותפות והצלחה קלינית" />
                     </div>
                     <div class="feature-content">
-                        <h2 class="feature-title">שותפים להצלחה הקלינית שלך, ביחס אישי ומשפחתי.</h2>
+                        <span class="feature-icon" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </span>
+                        <h3 class="feature-title">שותפים להצלחה הקלינית שלך, ביחס אישי ומשפחתי.</h3>
                         <p class="feature-text">מרפאות העובדות עמנו מרוויחות יחס בוטיק. גישה ישירה לניר ומיכל, ליווי
                             אישי וקשוב, וניהול חכם ומבוסס נתונים של ההזמנות שלכם. איכות יוקרתית, יציבות של ארבעה עשורים
                             ודיוק של העתיד.</p>
@@ -102,51 +188,100 @@
                 </article>
             </div>
         </section>
+
+        <!-- TODO: להחליף את ההמלצה והפרטים בהמלצה אמיתית ממרפאה שותפה -->
+        <section id="testimonials" class="testimonial-section band-dark" aria-labelledby="testimonials-title">
+            <div class="container testimonial-inner">
+                <p class="eyebrow eyebrow-on-dark">ממליצים עלינו</p>
+                <h2 id="testimonials-title" class="visually-hidden">המלצות ממרפאות שותפות</h2>
+                <figure class="testimonial-card">
+                    <blockquote class="testimonial-quote">
+                        ״[ציטוט המלצה ממרפאה שותפה — יתווסף בהמשך. שניים-שלושה משפטים על איכות העבודה, סגירת
+                        השוליים, העמידה בזמנים והיחס האישי של ניר ומיכל.]״
+                    </blockquote>
+                    <figcaption class="testimonial-attribution">
+                        <span class="testimonial-name">[שם הרופא/ה]</span>
+                        <span class="testimonial-clinic">[שם המרפאה], [עיר]</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <p class="eyebrow">בואו נתחיל</p>
+                    <h2 id="contact-title" class="section-title">שותפות שמתחילה ביחד.</h2>
+                    <p class="feature-text">אנו בוחרים את המרפאות שאיתן אנו עובדים בקפידה. מלאו את הפרטים ונחזור אליכם
+                        לשיחת היכרות אישית.</p>
+                </div>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="doctorName">שם הרופא/ה</label>
+                        <input type="text" id="doctorName" name="doctorName" class="form-control" autocomplete="name"
+                            required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="clinicName">שם המרפאה</label>
+                        <input type="text" id="clinicName" name="clinicName" class="form-control"
+                            autocomplete="organization" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">טלפון</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel"
+                            inputmode="tel" dir="ltr" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">דוא"ל</label>
+                        <input type="email" id="email" name="email" class="form-control" autocomplete="email"
+                            dir="ltr" required aria-required="true">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">הגש בקשה לשותפות</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <section id="contact" class="contact-section" aria-labelledby="contact-title">
-        <div class="container contact-grid">
-            <div class="contact-info">
-                <h2 id="contact-title" class="feature-title">שותפות שמתחילה ביחד.</h2>
-                <p class="feature-text">אנו בוחרים את המרפאות שאיתן אנו עובדים בקפידה. מלאו את הפרטים ונחזור אליכם לשיחת
-                    היכרות אישית.</p>
-            </div>
-            <form class="contact-form" action="#" method="POST">
-                <div class="form-group">
-                    <label for="doctorName">שם הרופא/ה</label>
-                    <input type="text" id="doctorName" class="form-control" required aria-required="true">
-                </div>
-                <div class="form-group">
-                    <label for="clinicName">שם המרפאה</label>
-                    <input type="text" id="clinicName" class="form-control" required aria-required="true">
-                </div>
-                <div class="form-group">
-                    <label for="email">דוא"ל</label>
-                    <input type="email" id="email" class="form-control" required aria-required="true">
-                </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--space-sm);">הגש בקשה
-                    לשותפות</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="site-footer">
+    <footer class="site-footer band-dark">
         <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <img src="./logo.png" alt="לוגו ניו-קרומי" class="footer-logo" />
+                <p>מעבדת שיניים בוטיק משפחתית. 45 שנות אומנות, בדיוק דיגיטלי.</p>
+                <!-- TODO: להחליף בקישורים אמיתיים לרשתות החברתיות, או למחוק -->
+                <div class="social-links" aria-label="רשתות חברתיות">
+                    <a href="#" aria-label="פייסבוק">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="אינסטגרם">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>ניווט</h3>
+                <a href="#features">שירותים</a>
+                <a href="#testimonials">ממליצים</a>
+                <a href="#contact">יצירת קשר</a>
+                <span class="footer-muted">אזור אישי למרפאות — בקרוב</span>
+            </div>
             <div class="footer-col">
                 <h3>יצירת קשר</h3>
                 <p>קשר ישיר עם ניר ומיכל במעבדה.</p>
-                <a href="tel:+97200000000">050-000-0000</a>
+                <!-- TODO: להחליף במספר טלפון אמיתי -->
+                <a href="tel:+972500000000" dir="ltr">050-000-0000</a>
             </div>
             <div class="footer-col" id="submit">
                 <h3>ערכת היכרות (Starter Kit)</h3>
                 <p>כוללת טפסי מעבדה דיגיטליים ומדריכי עבודה למרפאה שלך.</p>
-                <a href="#contact" class="btn btn-primary"
-                    style="padding: var(--space-xs) var(--space-sm); font-size: var(--font-size-small);">הזמן ערכה
-                    פיזית</a>
-            </div>
-            <div class="footer-col">
-                <h3>אזור אישי</h3>
-                <p>מערכת מעקב חכמה להזמנות וסריקות דיגיטליות עבור מרפאות.</p>
+                <a href="#contact" class="btn btn-primary btn-small">הזמן ערכה פיזית</a>
             </div>
         </div>
         <div class="container footer-bottom">
