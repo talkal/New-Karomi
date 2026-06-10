@@ -1,0 +1,30 @@
+{
+  "status": "tool_missing",
+  "message": "generate_image tool not found. Prompts created instead.",
+  "manifest": [
+    {
+      "type": "logo",
+      "strategy": "Option 1",
+      "filename": "c:/Users/talka/Desktop/Websites project/New-Karomi Dental Labs/logo_option1_artisan.png",
+      "prompt": "Minimalist artisanal logo for 'Karomi', family-run boutique dental lab, warm earthy tones, handcrafted feel, elegant serif typography, clean white background, 45 years experience."
+    },
+    {
+      "type": "logo",
+      "strategy": "Option 2",
+      "filename": "c:/Users/talka/Desktop/Websites project/New-Karomi Dental Labs/logo_option2_hightech.png",
+      "prompt": "Modern high-tech digital logo for 'Karomi', sleek geometric lines, precise and data-driven, glowing cyan and silver colors, sans-serif futuristic typography, clean dark background."
+    },
+    {
+      "type": "section_image",
+      "strategy": "Option 1",
+      "filename": "c:/Users/talka/Desktop/Websites project/New-Karomi Dental Labs/hero_option1.jpg",
+      "prompt": "Warm, inviting artisanal dental lab workspace, soft natural sunlight, close up of crafted dental work with traditional tools, personal family-run atmosphere, professional yet humble."
+    },
+    {
+      "type": "section_image",
+      "strategy": "Option 2",
+      "filename": "c:/Users/talka/Desktop/Websites project/New-Karomi Dental Labs/hero_option2.jpg",
+      "prompt": "Ultra-modern digital dental laboratory, high-tech 3D milling machines, bright clean clinical lighting, computer screens showing precise dental CAD models, futuristic and data-driven."
+    }
+  ]
+}

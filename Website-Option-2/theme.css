@@ -1,0 +1,64 @@
+/* New-Karomi Dental Labs — Elite UI/UX Design System (2025 Standard) - Option 2 (High-Tech) */
+:root {
+  /* Primitive Tokens */
+  --color-matte-black: oklch(0.18 0 0);
+  --color-white: oklch(1 0 0);
+  --color-clinical-white: oklch(0.96 0.005 250);
+  --color-clinical-dark: oklch(0.25 0.01 250);
+  --color-high-tech-blue: oklch(0.85 0.01 250);
+
+  /* Semantic Tokens (Light) */
+  --primary: var(--color-matte-black);
+  --on-primary: var(--color-white);
+  --surface: var(--color-clinical-white);
+  --on-surface: var(--color-matte-black);
+  --background: var(--color-white);
+  --text-primary: var(--color-matte-black);
+  --text-secondary: oklch(0.4 0 0); /* Stark contrast gray */
+  --focus-ring: var(--primary);
+
+  /* Fluid Typography */
+  --font-size-hero: clamp(2.5rem, 5vw, 4rem);
+  --font-size-h1: clamp(2rem, 4vw, 3rem);
+  --font-size-body: clamp(1rem, 1.5vw, 1.125rem);
+  --font-size-sm: clamp(0.875rem, 1vw + 0.5rem, 1rem); /* Form labels / meta */
+
+  /* Spacing (8px Baseline Grid) */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-5: 2.5rem;   /* 40px */
+  --space-6: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+
+  /* Motion */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+}
+
+[data-theme="dark"] {
+  /* Semantic Tokens (Dark Mutation) */
+  --primary: var(--color-high-tech-blue);
+  --on-primary: var(--color-matte-black);
+  --surface: var(--color-clinical-dark);
+  --on-surface: var(--color-white);
+  --background: oklch(0.15 0 0);
+  --text-primary: var(--color-white);
+  --text-secondary: oklch(0.7 0 0);
+  --focus-ring: var(--primary);
+}
+
+/* Accessibility & Invariants */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    --duration-fast: 0ms !important;
+    --duration-base: 0ms !important;
+  }
+}
