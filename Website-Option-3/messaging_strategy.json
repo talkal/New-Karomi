@@ -1,0 +1,25 @@
+{
+  "project": "New-Karomi Option 3",
+  "theme": "Sky Blue Partnership",
+  "focus": "Communication, Reliability, Service",
+  "messaging_pillars": [
+    {
+      "id": "communication",
+      "headline": "Direct Tech Sync",
+      "body": "Direct line to tech. Fast answers. No guess. Doctor and lab align always.",
+      "keywords": ["direct line", "fast answers", "sync workflow"]
+    },
+    {
+      "id": "reliability",
+      "headline": "Zero Delay Delivery",
+      "body": "Predictable schedule. Trust process. Cases arrive ready. Never late.",
+      "keywords": ["zero delay", "predictable schedule", "arrive ready"]
+    },
+    {
+      "id": "service",
+      "headline": "Function First Fit",
+      "body": "Exact fit. Less chair time. Smooth seat. Prioritize mechanics over pure art.",
+      "keywords": ["exact fit", "less chair time", "function first"]
+    }
+  ]
+}

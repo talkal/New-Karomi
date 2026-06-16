@@ -1,0 +1,79 @@
+/* New-Karomi Dental Labs — Elite UI/UX Design System (2025 Standard) - Option 3 Clinical Partnership */
+:root {
+  /* Primitive Tokens - Sky Blue / Navy Palette */
+  --brand-900: oklch(0.25 0.04 250); /* Deep Navy */
+  --brand-700: oklch(0.45 0.08 250); /* Slate Blue */
+  --brand-500: oklch(0.75 0.12 240); /* Sky Blue */
+  --brand-300: oklch(0.90 0.04 240); /* Soft Ice Blue */
+  --brand-100: oklch(0.97 0.01 240); /* Clinical Tint */
+  --brand-50: oklch(0.99 0.00 0);    /* Pure White */
+
+  --success: oklch(0.60 0.15 150);
+  --error: oklch(0.50 0.20 25);
+  --info: oklch(0.31 0.08 260);
+
+  /* Semantic Tokens (Light) */
+  --surface-bg: var(--brand-50);
+  --surface-alt: var(--brand-100);
+  --text-primary: var(--brand-900);
+  --text-secondary: var(--brand-700);
+  --action-primary: var(--brand-500);
+  --action-on-primary: var(--brand-900); /* Dark text on Sky Blue for contrast */
+  --border-subtle: var(--brand-300);
+
+  /* Fluid Typography */
+  --font-size-hero: clamp(2.5rem, 5vw, 4rem);
+  --font-size-h1: clamp(2rem, 4vw, 3rem);
+  --font-size-h2: clamp(1.5rem, 3vw, 2.5rem);
+  --font-size-h3: clamp(1.25rem, 2vw, 1.75rem);
+  --font-size-body: clamp(1rem, 1.5vw, 1.125rem);
+  --font-size-small: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+  --font-size-micro: clamp(0.75rem, 0.75vw + 0.5rem, 0.875rem);
+
+  /* Spacing */
+  --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+  --space-sm: clamp(0.5rem, 1vw, 1rem);
+  --space-md: clamp(1rem, 2vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 3vw, 3rem);
+  --space-xl: clamp(3rem, 5vw, 5rem);
+  --space-2xl: clamp(5rem, 8vw, 8rem);
+
+  /* Radius scale */
+  --radius-sm: 6px;   /* buttons, inputs */
+  --radius-md: 6px;  /* images, cards (approachable) */
+
+  /* Elevation (diffuse shadows) */
+  --shadow-md: 0 4px 12px oklch(0.25 0.04 250 / 0.05);
+  --shadow-lg: 0 12px 24px oklch(0.25 0.04 250 / 0.10);
+
+  /* Motion */
+  --ease-snappy: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+}
+
+[data-theme="dark"] {
+  /* Semantic Tokens (Dark Mutation) */
+  --surface-bg: var(--brand-900);
+  --surface-alt: color-mix(in oklch, var(--brand-900), var(--brand-50) 10%);
+  --text-primary: var(--brand-50);
+  --text-secondary: var(--brand-300);
+  --action-primary: var(--brand-500);
+  --action-on-primary: var(--brand-900);
+  --border-subtle: var(--brand-700);
+}
+
+/* Accessibility & Invariants */
+:focus-visible {
+  outline: 2px solid var(--action-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    --duration-fast: 0ms !important;
+    --duration-base: 0ms !important;
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}
