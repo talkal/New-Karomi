@@ -70,17 +70,15 @@ section[id],
     line-height: 1.15;
     font-family: 'Marcellus', 'Frank Ruhl Libre', serif;
     font-weight: 400;
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    letter-spacing: 0.01em;
     direction: ltr;
 }
 .logo-sub {
     font-family: 'Marcellus', 'Assistant', sans-serif;
     font-size: var(--font-size-micro);
     font-weight: 400;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
+    letter-spacing: 0.16em;
     color: var(--text-secondary);
 }
 .logo-img {
