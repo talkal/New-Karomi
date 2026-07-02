@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Scroll reveal (progressive enhancement) ---
     const revealTargets = document.querySelectorAll(
-        '.feature-row, .contact-grid, .stat-item, .testimonial-card, .section-head, .product-category'
+        '.feature-row, .contact-grid, .stat-item, .testimonial-card, .section-head, .product-category, .legacy-figure, .legacy-content'
     );
     if ('IntersectionObserver' in window && revealTargets.length) {
         const observer = new IntersectionObserver((entries) => {
