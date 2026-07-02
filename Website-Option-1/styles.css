@@ -624,3 +624,33 @@ a {
     inset-inline-start: 0;
     color: var(--action-primary);
 }
+
+/* ============ WhatsApp Button ============ */
+.whatsapp-btn {
+    position: fixed;
+    bottom: var(--space-lg);
+    inset-inline-end: var(--space-lg);
+    background-color: #25D366;
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    transition: transform var(--duration-fast) var(--ease-premium-in-out),
+        box-shadow var(--duration-fast) var(--ease-premium-in-out),
+        background-color var(--duration-fast);
+}
+.whatsapp-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(37, 211, 102, 0.3);
+    background-color: #1DA851;
+    color: white;
+}
+.whatsapp-btn svg {
+    width: 32px;
+    height: 32px;
+}
