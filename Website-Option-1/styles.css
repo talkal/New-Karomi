@@ -681,3 +681,52 @@ a {
     width: 32px;
     height: 32px;
 }
+
+/* ============ Contact Actions ============ */
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    justify-content: center;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+@media (min-width: 576px) {
+    .action-buttons {
+        flex-direction: row;
+        gap: var(--space-lg);
+    }
+}
+
+.urgent-call-card {
+    background: var(--bg-tertiary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-inline-start: 4px solid var(--action-primary);
+}
+
+.urgent-title {
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--text-primary);
+}
+
+.urgent-action {
+    color: var(--text-secondary);
+}
+
+.tel-link {
+    font-weight: 700;
+    color: var(--action-primary);
+    text-decoration: none;
+    transition: color var(--duration-fast);
+}
+
+.tel-link:hover {
+    color: var(--action-hover);
+}
