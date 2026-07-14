@@ -233,7 +233,7 @@ a {
 }
 @media (min-width: 900px) {
     .hero-grid {
-        grid-template-columns: 1.15fr 0.85fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
     }
 }
@@ -299,9 +299,9 @@ a {
     width: 100%;
     height: auto;
     border-radius: var(--radius-md);
-    object-fit: cover;
-    aspect-ratio: 4/5;
-    filter: saturate(0.92) sepia(0.06);
+    object-fit: contain;
+    aspect-ratio: auto;
+    filter: saturate(0.96);
     box-shadow: var(--shadow-lg);
 }
 
